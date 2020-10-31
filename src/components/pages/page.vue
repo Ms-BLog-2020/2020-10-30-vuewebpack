@@ -1,12 +1,10 @@
 <template>
   <div class="hello">
+    <router-link to="/page/">卡片1</router-link>
+    <router-link to="/page/child2">卡片2</router-link>
+    <router-link to="/page/child3">卡片3</router-link>
     <div class="card" style="width: 18rem;">
-    <img src="" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+      <router-view></router-view>
     </div>
   </div>
 </template>

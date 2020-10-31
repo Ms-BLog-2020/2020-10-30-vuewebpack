@@ -1,16 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    // </HelloWorld>
+    
+    </HelloWorld>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/index">Home <span class="sr-only">(current)</span></router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/page">Page <span class="sr-only">(current)</span></router-link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     <router-view></router-view>
-    <h1>word testing</h1>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+    
+    
   </div>
 </template>
 
