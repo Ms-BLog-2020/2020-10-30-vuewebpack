@@ -32,7 +32,7 @@ export default new VueRouter({
                 },
                 {
                     name: '卡片 3',
-                    path: 'child3',
+                    path: 'child/:id', //動態路由
                     component: child3,
                 },
             ]
