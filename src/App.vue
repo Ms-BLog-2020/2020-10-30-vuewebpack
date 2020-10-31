@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld/>
+    // </HelloWorld>
+    <router-view></router-view>
+    <h1>word testing</h1>
     <div class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -19,11 +21,16 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  created (){
+    this.$http.get('https://randomuser.me/api/')
+    .then((response)=> { 
+      console.log(response)
+     })
   }
 }
 </script>
 
 <style lang="scss"> 
 @import "~bootstrap/scss/bootstrap";
-
 </style>
