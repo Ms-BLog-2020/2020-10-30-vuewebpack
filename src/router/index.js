@@ -8,8 +8,7 @@ export default new VueRouter({
     routes:[
         {
             name: '首頁',
-            path: '/',
+            path: '/index',
             component: Home,
         }
     ]
-});
