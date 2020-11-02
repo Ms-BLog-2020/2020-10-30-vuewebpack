@@ -14,14 +14,17 @@
 export default {
   data () {
     return {
-     
+     user: {
+       picture: {},
+     }
     }
   },
   created() {
-      console.log(this.$route.params.id);
+      console.log(this.$route.params.id)
       const id = this.$route.params.id;
       this.$http.get(`https://randomuser.me/api/?seed=${id}`).then((response)=>{
           console.log(response);
+          vm.user=response.data.results[0];
       })
   }
 }
